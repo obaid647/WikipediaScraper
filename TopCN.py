@@ -23,8 +23,6 @@ def TopCN():
     #get table from code
     table = soup.find_all('table')[0]
 
-    print(table)
-
     #get titles of table
     htmlTitles = table.find_all("th")
     columnTitles = [title.text.strip() for title in htmlTitles]
